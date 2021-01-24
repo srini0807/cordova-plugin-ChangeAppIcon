@@ -4,7 +4,7 @@ cordova.addConstructor(function() {
 
     }
 
-    changeappicon .prototype.ChanageToIcon = function(iconname, successCallback, errorCallback ){
+    changeappicon.prototype.ChanageToIcon = function(iconname, successCallback, errorCallback ){
         cordova.exec(successCallback, errorCallback, "ChangeAppIcon", "ChanageToIcon", [iconname]);
     }
 
