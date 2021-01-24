@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-Plugin"
+    version="1.0.0">
+    <name>Cordova Plugin for app icon change</name>
+    <description>Change the application launch icon dynamically</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo></repo>
+    <issue></issue>
+
+     <js-module src="www/plugin.js" name="plugin">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="changeappicon" />
+      </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+     
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="ChangeAppIcon">
+          <param name="android-package" value="com.cordova.ChangeAppIcon" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/changeappicon.java" target-dir="src/com/cordova/ChangeAppIcon"/>
+	  
+	  <config-file target="AndroidManifest.xml" parent="application">
+            <activity-alias
+				android:name="Icon1"
+				android:enabled="false"
+				android:icon="@drawable/appicon1"
+				android:targetActivity=".MainActivity">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN"/>
+					<category android:name="android.intent.category.LAUNCHER"/>
+				</intent-filter>
+			</activity-alias>
+
+			<activity-alias
+				android:name="Icon2"
+				android:enabled="false"
+				android:icon="@drawable/appicon2"
+				android:targetActivity=".MainActivity">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN"/>
+					<category android:name="android.intent.category.LAUNCHER"/>
+				</intent-filter>
+			</activity-alias>
+
+			<activity-alias
+				android:name="Icon3"
+				android:enabled="false"
+				android:icon="@drawable/appicon3"
+				android:targetActivity=".MainActivity">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN"/>
+					<category android:name="android.intent.category.LAUNCHER"/>
+				</intent-filter>
+			</activity-alias>
+
+			<activity-alias
+				android:name="Icon4"
+				android:enabled="false"
+				android:icon="@drawable/appicon4"
+				android:targetActivity=".MainActivity">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN"/>
+					<category android:name="android.intent.category.LAUNCHER"/>
+				</intent-filter>
+			</activity-alias>
+
+			<activity-alias
+				android:name="Icon5"
+				android:enabled="false"
+				android:icon="@drawable/appicon5"
+				android:targetActivity=".MainActivity">
+				<intent-filter>
+					<action android:name="android.intent.action.MAIN"/>
+					<category android:name="android.intent.category.LAUNCHER"/>
+				</intent-filter>
+			</activity-alias>
+        </config-file>
+
+    </platform>
+    
+        <!-- iOS -->
+
+    <!--<platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="">
+        <param name="ios-package" value="" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/filename.h" />
+    <source-file src="src/ios/filename.m" />
+  </platform>-->
+</plugin>
