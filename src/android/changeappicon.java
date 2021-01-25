@@ -48,51 +48,53 @@ public class changeappicon extends CordovaPlugin {
   
     public void ChanageToIcon(String iconname,  CallbackContext callbackContext) {
 		Log.i(TAG, "ChanageToIcon: "+ iconname);
-		/*switch (iconname){
+		Context ct = this.getApplicationContext();
+        PackageManager pm = ct.getPackageManager();
+		switch (iconname){
             case "Icon1":
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 1, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon3.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon4.class), 2, 1);
-				this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon5.class), 2, 1);
-                Toast.makeText((Context)this, (CharSequence)"Launcher "+iconname+" has been applied successfully", 0).show();
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon5.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                Toast.makeText(ct, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon2":
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 1, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon3.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon4.class), 2, 1);
-				this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon5.class), 2, 1);
-                Toast.makeText((Context)this, (CharSequence)"Launcher "+iconname+" has been applied successfully", 0).show();
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon5.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                Toast.makeText(ct, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon3":
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon3.class), 1, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon4.class), 2, 1);
-				this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon5.class), 2, 1);
-                Toast.makeText((Context)this, (CharSequence)"Launcher "+iconname+" has been applied successfully", 0).show();
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon5.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                Toast.makeText(ct, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon4":
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon3.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon4.class), 1, 1);
-				this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon5.class), 2, 1);
-                Toast.makeText((Context)this, (CharSequence)"Launcher "+iconname+" has been applied successfully", 0).show();
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon5.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                Toast.makeText(ct, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon5":
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon3.class), 2, 1);
-                this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon4.class), 2, 1);
-				this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon5.class), 1, 1);
-                Toast.makeText((Context)this, (CharSequence)"Launcher "+iconname+" has been applied successfully", 0).show();
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon5.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                Toast.makeText(ct, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             default:
-                Toast.makeText((Context)this, (CharSequence)"Invalid icon name", 0).show();
+                Toast.makeText(ct, "Invalid icon name", Toast.LENGTH_LONG).show();
                 break;
-        }*/
+        }
 		
             callbackContext.success("Plugin Success");
          
