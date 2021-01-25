@@ -103,5 +103,49 @@
     </config-file>
     <header-file src="src/ios/changeappicon.h" />
     <source-file src="src/ios/changeappicon.m" />
+	
+	<config-file target="*Info.plist" parent="CFBundleIcons">
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>Icon1</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>appicon1</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>Icon2</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>appicon2</string>
+				</array>
+			</dict>
+			<key>Icon3</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>appicon3</string>
+				</array>
+			</dict>
+			<key>Icon4</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>appicon4</string>
+				</array>
+			</dict>
+			<key>Icon5</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>appicon5</string>
+				</array>
+			</dict>
+		</dict>
+	  </config-file>
+	  
   </platform>
 </plugin>
