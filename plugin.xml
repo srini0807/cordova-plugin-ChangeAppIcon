@@ -105,6 +105,7 @@
     <source-file src="src/ios/changeappicon.m" />
 	
 	<config-file target="*Info.plist" parent="CFBundleIcons">
+	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
 			<key>Icon1</key>
@@ -145,7 +146,8 @@
 				</array>
 			</dict>
 		</dict>
-	  </config-file>
+	</dict>
+    </config-file>
 	  
 	  
 	
