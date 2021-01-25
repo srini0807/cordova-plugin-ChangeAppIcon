@@ -13,6 +13,7 @@ BOOL IsErr;
     CDVPluginResult* pluginResult = nil;
 	NSString* IconName = [command.arguments objectAtIndex:0];
 	IsErr = false;
+	NSLog(@"Error... %@", IconName);
 	[[UIApplication sharedApplication] setAlternateIconName:IconName completionHandler:^(NSError * _Nullable error) {
                 NSLog(@"Error... %@", error);
 				IsErr = true;
