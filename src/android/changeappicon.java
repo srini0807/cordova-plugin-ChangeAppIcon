@@ -48,7 +48,7 @@ public class changeappicon extends CordovaPlugin {
   
     public void ChanageToIcon(String iconname,  CallbackContext callbackContext) {
 		Log.i(TAG, "ChanageToIcon: "+ iconname);
-		Context ct = this.getApplicationContext();
+		Context ct = getApplication().getApplicationContext();
         PackageManager pm = ct.getPackageManager();
 		switch (iconname){
             case "Icon1":
