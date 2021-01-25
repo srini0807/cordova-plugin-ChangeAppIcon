@@ -22,9 +22,7 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast
-
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Toast;
 
 
 public class changeappicon extends CordovaPlugin {
