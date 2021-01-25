@@ -48,7 +48,7 @@ public class changeappicon extends CordovaPlugin {
   
     public void ChanageToIcon(String iconname,  CallbackContext callbackContext) {
 		Log.i(TAG, "ChanageToIcon: "+ iconname);
-		switch (iconname){
+		/*switch (iconname){
             case "Icon1":
                 this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon1.class), 1, 1);
                 this.getPackageManager().setComponentEnabledSetting(new ComponentName((Context)this, Icon2.class), 2, 1);
@@ -92,7 +92,7 @@ public class changeappicon extends CordovaPlugin {
             default:
                 Toast.makeText((Context)this, (CharSequence)"Invalid icon name", 0).show();
                 break;
-        }
+        }*/
 		
             callbackContext.success("Plugin Success");
          
