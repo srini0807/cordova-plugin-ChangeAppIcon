@@ -1,5 +1,5 @@
 
-package com.cordova.ChangeAppIcon;
+package com.cordova.changeappicon;
 
 import org.apache.cordova.*;
 
@@ -27,14 +27,14 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-public class ChangeAppIcon extends CordovaPlugin {
-  private static final String TAG = "ChangeAppIcon";
+public class changeappicon extends CordovaPlugin {
+  private static final String TAG = "changeappicon";
       private static final String GET_ChanageToIcon = "ChanageToIcon";
    
   @Override
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
     super.initialize(cordova, webView);
-	Log.i(TAG, "Initializing ChangeAppIcon Plugin");
+	Log.i(TAG, "Initializing changeappicon Plugin");
   }
 
     public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {

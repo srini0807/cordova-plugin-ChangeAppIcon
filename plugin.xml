@@ -21,13 +21,13 @@
     <platform name="android">
      
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="ChangeAppIcon">
-          <param name="android-package" value="com.cordova.ChangeAppIcon" />
+        <feature name="changeappicon">
+          <param name="android-package" value="com.cordova.changeappicon" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/changeappicon.java" target-dir="src/com/cordova/ChangeAppIcon"/>
+      <source-file src="src/android/changeappicon.java" target-dir="src/com/cordova/changeappicon"/>
 	  
 	  <config-file target="AndroidManifest.xml" parent="application">
             <activity-alias
