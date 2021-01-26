@@ -64,7 +64,7 @@ public class changeappicon extends CordovaPlugin {
                 //Toast.makeText(this, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon2":
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.cordova.changeappicon.Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
@@ -72,7 +72,7 @@ public class changeappicon extends CordovaPlugin {
                 //Toast.makeText(this, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon3":
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.cordova.changeappicon.Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
@@ -80,7 +80,7 @@ public class changeappicon extends CordovaPlugin {
                 //Toast.makeText(this, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon4":
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.cordova.changeappicon.Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
@@ -88,7 +88,7 @@ public class changeappicon extends CordovaPlugin {
                 //Toast.makeText(this, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon5":
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.cordova.changeappicon.Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, Icon1.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon2.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon3.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 pm.setComponentEnabledSetting(new ComponentName(ct, Icon4.class), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
