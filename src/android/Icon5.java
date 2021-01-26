@@ -1,4 +1,4 @@
-package com.example.changeappicondynamically;
+package com.cordova.changeappicon;
 
 public class Icon5 {
 }
