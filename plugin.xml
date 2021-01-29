@@ -39,6 +39,7 @@
 				android:name="Icon1"
 				android:enabled="false"
 				android:icon="@drawable/appicon1"
+				android:label="GEMS Classroom"
 				android:targetActivity=".MainActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN"/>
@@ -50,6 +51,7 @@
 				android:name="Icon2"
 				android:enabled="false"
 				android:icon="@drawable/appicon2"
+				android:label="GEMS Classroom"
 				android:targetActivity=".MainActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN"/>
@@ -61,6 +63,7 @@
 				android:name="Icon3"
 				android:enabled="false"
 				android:icon="@drawable/appicon3"
+				android:label="GEMS Classroom"
 				android:targetActivity=".MainActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN"/>
@@ -72,6 +75,7 @@
 				android:name="Icon4"
 				android:enabled="false"
 				android:icon="@drawable/appicon4"
+				android:label="GEMS Classroom"
 				android:targetActivity=".MainActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN"/>
@@ -83,6 +87,7 @@
 				android:name="Icon5"
 				android:enabled="false"
 				android:icon="@drawable/appicon5"
+				android:label="GEMS Classroom"
 				android:targetActivity=".MainActivity">
 				<intent-filter>
 					<action android:name="android.intent.action.MAIN"/>
