@@ -67,11 +67,11 @@ public class changeappicon extends CordovaPlugin {
                 break;
             case "Icon2":
 				pm.setComponentEnabledSetting(this.cordova.getActivity().getComponentName() , PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.classroom.phoenix.Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.classroom.phoenix.Icon2"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.classroom.phoenix.Icon3"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.classroom.phoenix.Icon4"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                pm.setComponentEnabledSetting(new ComponentName(ct, "com.classroom.phoenix.Icon5"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, "Icon1"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, "Icon2"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, "Icon3"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, "Icon4"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                pm.setComponentEnabledSetting(new ComponentName(ct, "Icon5"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
                 //Toast.makeText(this, "Launcher "+iconname+" has been applied successfully", Toast.LENGTH_LONG).show();
                 break;
             case "Icon3":
