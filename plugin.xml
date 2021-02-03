@@ -29,11 +29,11 @@
 
       <source-file src="src/android/changeappicon.java" target-dir="src/com/cordova/changeappicon"/>
 	  <!-- Prod GC -->
-	  <source-file src="src/android/Icon1.java" target-dir="src/com/classroom/phoenix"/>
+	  <!--<source-file src="src/android/Icon1.java" target-dir="src/com/classroom/phoenix"/>
 	  <source-file src="src/android/Icon2.java" target-dir="src/com/classroom/phoenix"/>
 	  <source-file src="src/android/Icon3.java" target-dir="src/com/classroom/phoenix"/>
 	  <source-file src="src/android/Icon4.java" target-dir="src/com/classroom/phoenix"/>
-	  <source-file src="src/android/Icon5.java" target-dir="src/com/classroom/phoenix"/>
+	  <source-file src="src/android/Icon5.java" target-dir="src/com/classroom/phoenix"/>-->
 	  <!-- Dev SC -->
 	  <source-file src="src/android/Icon1.java" target-dir="src/com/saas/classroomdev"/>
 	  <source-file src="src/android/Icon2.java" target-dir="src/com/saas/classroomdev"/>
