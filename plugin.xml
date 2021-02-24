@@ -28,6 +28,24 @@
       </config-file>
 
       <source-file src="src/android/changeappicon.java" target-dir="src/com/cordova/changeappicon"/>
+	  <!-- Dev SC -->
+	  <!--<source-file src="src/android/Icon1.java" target-dir="src/com/saas/classroomdev"/>
+	  <source-file src="src/android/Icon2.java" target-dir="src/com/saas/classroomdev"/>
+	  <source-file src="src/android/Icon3.java" target-dir="src/com/saas/classroomdev"/>
+	  <source-file src="src/android/Icon4.java" target-dir="src/com/saas/classroomdev"/>
+	  <source-file src="src/android/Icon5.java" target-dir="src/com/saas/classroomdev"/>-->
+	  <!-- Tst GC -->
+	  <source-file src="src/android/Icon1.java" target-dir="src/com/gems/classroom"/>
+	  <source-file src="src/android/Icon2.java" target-dir="src/com/gems/classroom"/>
+	  <source-file src="src/android/Icon3.java" target-dir="src/com/gems/classroom"/>
+	  <source-file src="src/android/Icon4.java" target-dir="src/com/gems/classroom"/>
+	  <source-file src="src/android/Icon5.java" target-dir="src/com/gems/classroom"/>
+	  <!-- Preprod SC -->
+	  <!--<source-file src="src/android/Icon1.java" target-dir="src/com/saas/classroomtf"/>
+	  <source-file src="src/android/Icon2.java" target-dir="src/com/saas/classroomtf"/>
+	  <source-file src="src/android/Icon3.java" target-dir="src/com/saas/classroomtf"/>
+	  <source-file src="src/android/Icon4.java" target-dir="src/com/saas/classroomtf"/>
+	  <source-file src="src/android/Icon5.java" target-dir="src/com/saas/classroomtf"/>-->
 	  <!-- Prod GC -->
 	  <!--<source-file src="src/android/Icon1.java" target-dir="src/com/classroom/phoenix"/>
 	  <source-file src="src/android/Icon2.java" target-dir="src/com/classroom/phoenix"/>
@@ -53,11 +71,11 @@
 	  <source-file src="src/android/Icon4.java" target-dir="src/com/saas/classroomtf"/>
 	  <source-file src="src/android/Icon5.java" target-dir="src/com/saas/classroomtf"/>-->
 	  <!-- Prod SC -->
-	  <source-file src="src/android/Icon1.java" target-dir="src/com/tmrw/clrm"/>
+	  <!--<source-file src="src/android/Icon1.java" target-dir="src/com/tmrw/clrm"/>
 	  <source-file src="src/android/Icon2.java" target-dir="src/com/tmrw/clrm"/>
 	  <source-file src="src/android/Icon3.java" target-dir="src/com/tmrw/clrm"/>
 	  <source-file src="src/android/Icon4.java" target-dir="src/com/tmrw/clrm"/>
-	  <source-file src="src/android/Icon5.java" target-dir="src/com/tmrw/clrm"/>
+	  <source-file src="src/android/Icon5.java" target-dir="src/com/tmrw/clrm"/>-->
 	  
 	  <config-file target="AndroidManifest.xml" parent="application">
             <activity-alias
